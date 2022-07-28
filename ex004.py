@@ -1,0 +1,22 @@
+msg = input('Digite algo: ')
+print('O tipo primitivo desse valor é', type(msg))
+print('Só tem espaços ?', msg.isspace())
+print('É um número?', msg.isnumeric())
+print('É alfabético?', msg.isalpha())
+print('É alfanumérico?', msg.isalnum())
+print('Está em maiúsculas?', msg.isupper())
+print('Está em minúsculas?', msg.islower())
+print('Está captalizada?', msg.istitle())
+
+
+
+msg = input('Digite algo: ')
+tp = ('tipo primitivo', type(msg))
+spc = ('Espaços?', msg.isspace())
+num = ('número?', msg.isnumeric())
+apha = ('É Alphabético?', msg.isalpha())
+anum = ('É Alphanumérico?', msg.isalnum())
+upp = ('Apenas Maiúsculas?', msg.isupper())
+low = ('Apenas minúsculas?', msg.islower())
+tit = ('Está captalizada?', msg.istitle())
+print('{}, {}, {}, {}, {}, {}, {}, {}'.format(tp,spc,num,apha,anum,upp,low,tit))
